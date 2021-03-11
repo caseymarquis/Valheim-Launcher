@@ -58,7 +58,7 @@ namespace ValheimLauncher {
                     return;
                 }
 
-                if (server.Password != null) {
+                if (!string.IsNullOrWhiteSpace(server.Password)) {
                     token.Status = LaunchStatus.MonitorForP;
                 }
             }
